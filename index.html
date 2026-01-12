@@ -3,7 +3,6 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!-- <link rel="stylesheet" href="article-page.css"> -->
    <!-- FONT -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -23,6 +22,7 @@
           },
           colors: {
             accent: '#18435c',
+            accent2: '#6424bd',
             hover: '#447896',
           },
         }
@@ -31,11 +31,11 @@
   </script>
   <title>Article Page</title>
 </head>
-<body class="font-sans bg-gradient-to-r from-cyan-500 to-blue-500 p-4">
+<body class="font-sans bg-gradient-to-r from-cyan-500 to-blue-500 px-8 py-12">
   <div class="max-w-6xl bg-white mx-auto rounded-md">
-    <header class="font-semibold">
+    <header class="font-semibold text-lg">
       <div class="flex justify-between items-center px-8 py-6 border-b border-gray-500">
-        <ul class="flex gap-4">
+        <ul class="flex gap-5">
           <li class="hover:text-accent transition duration-200 ease-in-out cursor-pointer">Product
             <i class="ml-0.5 fa-solid fa-angle-down"></i>
           </li>
@@ -52,28 +52,43 @@
       </div>
     </header>
     <main class="px-8">
-      <div class="flex justify-between items-center">
-        <ul class="flex gap-4">
-          <li><a href="#">
+      <div class="flex justify-between items-center py-3">
+        <ul class="flex gap-6 font-semibold">
+          <li class="hover:text-accent2 transition duration-200 ease-in-out cursor-pointer"><a href="#">
             Project
           </a></li>
-          <li><a href="#">
+          <li class="hover:text-accent2 transition duration-200 ease-in-out cursor-pointer"><a href="#">
             Remote
           </a></li>
-          <li><a href="#">
+          <li class="hover:text-accent2 transition duration-200 ease-in-out cursor-pointer"><a href="#">
             Teamwork
           </a></li>
-          <li><a href="#">
+          <li class="hover:text-accent2 transition duration-200 ease-in-out cursor-pointer"><a href="#">
             Productivity
           </a></li>
-          <li><a href="#">
+          <li class="hover:text-accent2 transition duration-200 ease-in-out cursor-pointer"><a href="#">
             Marketing
           </a></li>
         </ul>
-        <div>
-          <i class="fa-solid fa-magnifying-glass"></i>
+        <div class="relative flex items-center">
+          <input placeholder="What are you looking for today?" type="text" class="outline outline-1 outline-accent2 focus:outline-none focus:ring-2 focus:ring-accent2 pl-4 pr-9 py-2 min-w-[300px] rounded-3xl">
+          <i class="absolute right-3 fa-solid fa-magnifying-glass text-lg text-accent hover:text-accent2 transition duration-200 ease-in-out cursor-pointer"></i>
         </div>
       </div>
+      <section>
+        <div>
+          <h1 class="text-[40px] font-[700]">Productivity</h1>
+          <div class="bg-[url('https://upload.wikimedia.org/wikipedia/commons/e/e7/Everest_North_Face_toward_Base_Camp_Tibet_Luca_Galuzzi_2006.jpg')] bg-[center_center] bg-no-repeat bg-cover object-cover my-[20px] lg:w-[95%] h-[300px]"></div>
+          <h1 class="capitalize text-[30px] font-[600]">little things do make a difference</h1>
+          <p>Why do you want to motivate yourself? Actually, just answering that question fully can be one of the better ways to get your daily motivation.</p>
+          <div>
+            <div>
+
+            </div>
+            <span>Kathryn Shelton</span>
+          </div>
+        </div>
+      </section>
     </main>
 
   </div>
@@ -81,4 +96,6 @@
 </body>
 </html>
 
+<!-- border-[1px] border-solid border-[red] -->
 <!-- font-family: "Heebo", sans-serif; -->
+ <!-- https://icodethis.com/modes/design-to-code/49 -->
