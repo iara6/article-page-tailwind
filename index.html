@@ -31,11 +31,11 @@
   </script>
   <title>Article Page</title>
 </head>
-<body class="font-sans bg-gradient-to-r from-cyan-500 to-blue-500 px-8 py-12">
+<body class="font-sans bg-gradient-to-r from-cyan-500 to-blue-500 px-8 py-12 max-sm:px-2 max-sm:py-2">
   <div class="max-w-5xl bg-white mx-auto rounded-md pb-[2rem]">
-    <header class="font-semibold text-lg">
-      <div class="flex justify-between items-center px-8 py-6 border-b border-gray-500">
-        <ul class="flex gap-5">
+    <header class="font-semibold text-[15px] max-md:text-[14px]">
+      <div class="flex justify-between items-center px-8 py-6 border-b border-gray-400 whitespace-nowrap max-sm:px-4">
+        <ul class="flex gap-5 max-md:gap-3">
           <li class="hover:text-accent transition duration-200 ease-in-out cursor-pointer">Product
             <i class="ml-0.5 fa-solid fa-angle-down"></i>
           </li>
@@ -45,15 +45,15 @@
           </li>
           <li class="hover:text-accent transition duration-200 ease-in-out cursor-pointer">Blog</li>
         </ul>
-        <div class="flex gap-4">
+        <div class="flex gap-4 ml-5 max-md:gap-1 max-md:ml-3">
           <button class="border-[1px] border-solid border-accent px-4 py-2 rounded-3xl hover:text-hover transition duration-300 ease-in-out cursor-pointer">Log In</button>
           <button class="bg-accent text-white px-4 py-2 rounded-3xl hover:bg-hover transition duration-300 ease-in-out  cursor-pointer">Get started</button>
         </div>
       </div>
     </header>
     <main class="px-8">
-      <div class="flex justify-between items-center py-3">
-        <ul class="flex gap-6 font-semibold">
+      <div class="flex justify-between items-center py-3  max-md:flex-col">
+        <ul class="flex gap-6 text-[14px] font-semibold max-lg:gap-4">
           <li class="hover:text-accent2 transition duration-200 ease-in-out cursor-pointer"><a href="#">
             Project
           </a></li>
@@ -70,16 +70,16 @@
             Marketing
           </a></li>
         </ul>
-        <div class="relative flex items-center">
-          <input placeholder="What are you looking for today?" type="text" class="outline outline-1 outline-accent2 focus:outline-none focus:ring-2 focus:ring-accent2 pl-4 pr-9 py-2 min-w-[300px] rounded-3xl">
-          <i class="absolute right-3 fa-solid fa-magnifying-glass text-lg text-accent hover:text-accent2 transition duration-200 ease-in-out cursor-pointer"></i>
+        <div class="relative flex items-center ml-5">
+          <input placeholder="What are you looking for today?" type="text" class="outline outline-1 outline-accent2 focus:outline-none focus:ring-2 focus:ring-accent2 pl-4 pr-9 py-2 min-w-[300px] rounded-3xl max-lg:min-w-[200px] max-md:min-w-[350px] max-md:mt-4">
+          <i class="absolute right-3 fa-solid fa-magnifying-glass text-lg text-accent hover:text-accent2 transition duration-200 ease-in-out cursor-pointer max-md:mt-[1rem]"></i>
         </div>
       </div>
-      <h1 class="text-[40px] font-[700]">Productivity</h1>
-      <section class="flex gap-4">
-        <div class="flex-1">
+      <h1 class="text-[40px] font-[700] max-md:text-center max-md:mt-5">Productivity</h1>
+      <section class="flex gap-4 items-center max-lg:flex-col max-lg:items-start">
+        <div class="flex-1 cursor-pointer group max-lg:mb-[1.5rem]">
           <div class="bg-[url('https://upload.wikimedia.org/wikipedia/commons/e/e7/Everest_North_Face_toward_Base_Camp_Tibet_Luca_Galuzzi_2006.jpg')] bg-[center_center] bg-no-repeat bg-cover object-cover my-[20px] lg:w-[95%] h-[300px]"></div>
-          <h1 class="capitalize text-[30px] font-[600] leading-[1.2]">little things do make a <br> difference</h1>
+          <h1 class="capitalize text-[30px] font-[600] leading-[1.2] transition-colors duration-200 ease-in-out group-hover:text-accent2">little things do make a <br> difference</h1>
           <p class="py-2">Why do you want to motivate yourself? Actually, just answering that question fully can be one of the better ways to get your daily motivation.</p>
           <div class="flex items-center mt-3">
             <div class="bg-[url('https://img.freepik.com/free-photo/beautiful-female-posing-close-up_23-2148376552.jpg?t=st=1768250964~exp=1768254564~hmac=0ba391fa6af76a7dc891f02cc9634007587feb66c92b6f99cef11874dbdc64d1&w=1480')] bg-[center_center] bg-no-repeat bg-cover object-cover h-[50px] w-[50px] rounded-full">
@@ -89,10 +89,10 @@
         </div>
         <div class="flex-1">
           <h2 class="text-[18px] font-[700] mb-4">Recent articles</h2>
-          <div class="flex items-center gap-5">
-            <div class="bg-[url('https://img.freepik.com/free-photo/mesmerizing-view-reflection-mountain-lake-starry-night-sky_181624-24967.jpg?t=st=1768252075~exp=1768255675~hmac=80b42c45f454cd406ac550f61deb71e46d4704c114958ec41f6dbe340a5873d7&w=1480')] bg-[center_center] bg-no-repeat bg-cover object-cover min-w-[120px] h-[120px]"></div>
+          <div class="flex items-center gap-5 cursor-pointer hover:text-accent2 transition duration-200 ease-in-out">
+            <div class="bg-[url('https://img.freepik.com/free-photo/mesmerizing-view-reflection-mountain-lake-starry-night-sky_181624-24967.jpg?t=st=1768252075~exp=1768255675~hmac=80b42c45f454cd406ac550f61deb71e46d4704c114958ec41f6dbe340a5873d7&w=1480')] bg-[center_center] bg-no-repeat bg-cover object-cover min-w-[120px] h-[120px] max-lg:min-w-[170px] max-lg:h-[140px]"></div>
             <div>
-              <h2 class="capitalize text-4 font-[600]">common symbols and their meanings</h2>
+              <h2 class="capitalize text-[20px] leading-7 font-[600] max-lg:text-[1.5rem]">common symbols and their meanings</h2>
               <div class="flex items-center mt-3">
                 <div class="bg-[url('https://img.freepik.com/free-photo/beautiful-woman-face-portrait-brown-background_53876-96933.jpg?t=st=1768252313~exp=1768255913~hmac=3cb12aacba637f110228d134b0b7240db82e894e6e07d19721c95d785a805b51&w=1480')] bg-[center_center] bg-no-repeat bg-cover object-cover h-[50px] w-[50px] rounded-full">
                 </div>
@@ -100,10 +100,10 @@
               </div>
             </div>
           </div>
-          <div class="flex items-center gap-5 mt-[1.5rem]">
-            <div class="bg-[url('https://img.freepik.com/free-photo/silhouette-businessman-with-glasses_1098-84.jpg?t=st=1768253141~exp=1768256741~hmac=405ca911b493d2715abebb35be678e26b4564f4dbd29b64d0f52e899a9f54973&w=1480')] bg-[center_center] bg-no-repeat bg-cover object-cover min-w-[120px] h-[120px]"></div>
+          <div class="flex items-center gap-5 mt-[1.5rem] cursor-pointer hover:text-accent2 transition duration-200 ease-in-out">
+            <div class="bg-[url('https://img.freepik.com/free-photo/silhouette-businessman-with-glasses_1098-84.jpg?t=st=1768253141~exp=1768256741~hmac=405ca911b493d2715abebb35be678e26b4564f4dbd29b64d0f52e899a9f54973&w=1480')] bg-[center_center] bg-no-repeat bg-cover object-cover min-w-[120px] h-[120px] max-lg:min-w-[170px] max-lg:h-[140px]"></div>
             <div>
-              <h2 class="capitalize text-4 font-[600]">success steps for your business</h2>
+              <h2 class="capitalize text-[20px] leading-7 font-[600] max-lg:text-[1.5rem]">success steps for your business</h2>
               <div class="flex items-center mt-3">
                 <div class="bg-[url('https://img.freepik.com/free-photo/portrait-interesting-young-man-winter-clothes_158595-912.jpg?t=st=1768253214~exp=1768256814~hmac=af875976798463dbbcd878d585965b1fbab781a286edbecd6d2372a49b795145&w=1480')] bg-[center_center] bg-no-repeat bg-cover object-cover h-[50px] w-[50px] rounded-full">
                 </div>
@@ -111,10 +111,10 @@
               </div>
             </div>
           </div>
-          <div class="flex items-center gap-5 mt-[1.5rem]">
-            <div class="bg-[url('https://img.freepik.com/free-photo/purple-flower-field-with-house-distance-near-cliff-mountains_181624-2341.jpg?t=st=1768253591~exp=1768257191~hmac=b95d93e98316f17dda0d7c674f47257a620dcc5ea086e328b3bf451a69a7beb5&w=1480')] bg-[center_center] bg-no-repeat bg-cover object-cover min-w-[120px] h-[120px]"></div>
+          <div class="flex items-center gap-5 mt-[1.5rem]  cursor-pointer hover:text-accent2 transition duration-200 ease-in-out">
+            <div class="bg-[url('https://img.freepik.com/free-photo/purple-flower-field-with-house-distance-near-cliff-mountains_181624-2341.jpg?t=st=1768253591~exp=1768257191~hmac=b95d93e98316f17dda0d7c674f47257a620dcc5ea086e328b3bf451a69a7beb5&w=1480')] bg-[center_center] bg-no-repeat bg-cover object-cover min-w-[120px] h-[120px] max-lg:min-w-[170px] max-lg:h-[140px]"></div>
             <div>
-              <h2 class="capitalize text-4 font-[600]">the strength of your belief</h2>
+              <h2 class="capitalize text-[20px] leading-7 font-[600] max-lg:text-[1.5rem]">the strength of your belief</h2>
               <div class="flex items-center mt-3">
                 <div class="bg-[url('https://img.freepik.com/free-photo/tired-industrial-worker-wears-yellow-hardhat-apron_273609-32101.jpg?t=st=1768253641~exp=1768257241~hmac=81aaf8792f604d97e962fe12c78363bfab5d60c7eb468081d0aa4e2bb8ccf934&w=1480')] bg-[center_center] bg-no-repeat bg-cover object-cover h-[50px] w-[50px] rounded-full">
                 </div>
@@ -122,15 +122,20 @@
               </div>
             </div>
           </div>
+            <div class="flex items-center gap-5 mt-[1.5rem]  cursor-pointer hover:text-accent2 transition duration-200 ease-in-out">
+            <div class="bg-[url('https://img.freepik.com/free-photo/black-male-student-underlining-important-information-textbook-using-pencil-while-making-history-research-university-canteen-lunch-phone-coffee-food-resting-table_273609-7535.jpg?t=st=1768332532~exp=1768336132~hmac=2497dc7e70586a404cc600e8e79fcf52d4525ad8296e6b1d568cee8bfc4ca014&w=1480')] bg-[center_center] bg-no-repeat bg-cover object-cover min-w-[120px] h-[120px] max-lg:min-w-[170px] max-lg:h-[140px]"></div>
+            <div>
+              <h2 class="capitalize text-[20px] leading-7 font-[600] max-lg:text-[1.5rem]">finding motivation to study</h2>
+              <div class="flex items-center mt-3">
+                <div class="bg-[url('https://img.freepik.com/free-photo/front-view-handsome-man-posing_23-2148692174.jpg?t=st=1768332657~exp=1768336257~hmac=7cbc276e373445e44ab15ea01513c1c846e1f765097435fe849aea498976b97b&w=1480')] bg-[center_center] bg-no-repeat bg-cover object-cover h-[50px] w-[50px] rounded-full">
+                </div>
+                <span class="text-accent pl-[8px] text-[15px]">Timothy Castillo</span>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
     </main>
-
   </div>
-  
 </body>
 </html>
-
-<!-- border-[1px] border-solid border-[red] -->
-<!-- font-family: "Heebo", sans-serif; -->
- <!-- https://icodethis.com/modes/design-to-code/49 -->
